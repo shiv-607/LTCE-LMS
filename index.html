@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://localhost/lms/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CHMSC LMS</title>
+		<meta name="description" content="Learning Management System">
+		<meta name="keywords" content="CHMSC LMS,CHMSCLMS,CHMSC,LMS,CHMSCLMS.COMXA">
+		<meta name="author" content="JOHN KEVIN LORAYNA">
+		
+        <!-- Bootstrap -->
+				<link href="http://localhost/lms/admin/images/favicon.ico" rel="icon" type="image">
+				<link href="./index_files/bootstrap.min.css" rel="stylesheet" media="screen">
+				<link href="./index_files/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+				<link href="./index_files/font-awesome.css" rel="stylesheet" media="screen">
+				<link href="./index_files/my_style.css" rel="stylesheet" media="screen">
+				<link href="./index_files/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+				<link href="./index_files/styles.css" rel="stylesheet" media="screen">
+				<!-- calendar css -->
+				<link href="./index_files/fullcalendar.css" rel="stylesheet" media="screen">
+				<!-- index css -->
+				<link href="./index_files/index.css" rel="stylesheet" media="screen">
+				<!-- data table css -->
+				<link href="./index_files/DT_bootstrap.css" rel="stylesheet" media="screen">
+				<!-- notification  -->
+				<link href="./index_files/jquery.jgrowl.css" rel="stylesheet" media="screen">
+				<!-- wysiwug  -->
+				<link rel="stylesheet" type="text/css" href="./index_files/bootstrap-wysihtml5.css">
+		<script src="./index_files/jquery-1.9.1.min.js.download"></script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script>
+        <script src="./index_files/modernizr-2.6.2-respond-1.1.0.min.js.download"></script>
+    <style>
+	body#login::before {
+    content: "";
+    background: #00000036;
+    position: absolute;
+    top: 0;
+    /* z-index: 1; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+</style><style>.cke{visibility:hidden;}</style></head>
+
+<body id="login" __processed_f1589821-ab86-4eef-bfd9-aee144ea0c69__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d" bis_skin_checked="1">
+    <div class="container" style="position: relative" bis_skin_checked="1">
+		<div class="row-fluid" bis_skin_checked="1">
+			<div class="span6" bis_skin_checked="1"><div class="title_index" bis_skin_checked="1">				
+								<div class="row-fluid" bis_skin_checked="1">
+
+						<div class="span12" bis_skin_checked="1">
+						
+						</div>	
+													
+							</div>
+							<div class="row-fluid" bis_skin_checked="1">
+
+						<div class="span4" bis_skin_checked="1">
+						<img class="index_logo" src="./index_files/arc.png">
+						</div>	
+						<div class="span8" bis_skin_checked="1">
+						
+								<div class="title" bis_skin_checked="1">
+							<p class="chmsc">Lokmanya Tilak College Of Engineering - Koparkharine</p>
+							<h3>
+
+							<p>LTCE - Learning</p>
+						
+							</h3>		
+						</div>
+			
+						</div>							
+							</div>
+				
+				<div class="row-fluid" bis_skin_checked="1">
+
+						<div class="span12" bis_skin_checked="1">
+						<br>
+								<div class="motto" bis_skin_checked="1">
+												<p>LTCE EXCELS:</p>
+												<p>Excellence, Competence and Educational</p>
+												<p>Leadership in Science and Technology</p>
+								</div>		
+						</div>		
+				</div></div></div>
+			<div class="span6" bis_skin_checked="1"><div class="pull-right" bis_skin_checked="1">			<form id="login_form1" class="form-signin" method="post">
+						<h3 class="form-signin-heading"><i class="icon-lock"></i> Sign in</h3>
+						<input type="text" class="input-block-level" id="username" name="username" placeholder="Username" required="" fdprocessedid="hqfvk">
+						<input type="password" class="input-block-level" id="password" name="password" placeholder="Password" required="" fdprocessedid="uw7l69">
+						<button data-placement="right" title="" id="signin" name="login" class="btn btn-info" type="submit" data-original-title="Click Here to Sign In" fdprocessedid="ms7biq"><i class="icon-signin icon-large"></i> Sign in</button>
+														<script type="text/javascript">
+														$(document).ready(function(){
+															$('#signin').tooltip('show');
+															$('#signin').tooltip('hide');
+														});
+														</script>		
+			</form>
+						<script>
+						jQuery(document).ready(function(){
+						jQuery("#login_form1").submit(function(e){
+								e.preventDefault();
+								var formData = jQuery(this).serialize();
+								$.ajax({
+									type: "POST",
+									url: "login.php",
+									data: formData,
+									success: function(html){
+									if(html=='true')
+									{
+									$.jGrowl("Loading File Please Wait......", { sticky: true });
+									$.jGrowl("Welcome to  Learning Management System", { header: 'Access Granted' });
+									var delay = 1000;
+										setTimeout(function(){ window.location = 'dasboard_teacher.php'  }, delay);  
+									}else if (html == 'true_student'){
+										$.jGrowl("Welcome to  Learning Management System", { header: 'Access Granted' });
+									var delay = 1000;
+										setTimeout(function(){ window.location = 'student_notification.php'  }, delay);  
+									}else
+									{
+									$.jGrowl("Please Check your username and Password", { header: 'Login Failed' });
+									}
+									}
+								});
+								return false;
+							});
+						});
+						</script>
+			<div id="button_form" class="form-signin" bis_skin_checked="1">
+			New to LTCE LMS
+			<hr>
+				<h3 class="form-signin-heading"><i class="icon-edit"></i> Sign up</h3>
+				<button data-placement="top" title="" id="signin_student" onclick="window.location=&#39;signup_student.php&#39;" name="login" class="btn btn-info" type="submit" data-original-title="Sign In as Student" fdprocessedid="y4xgg">I`m a Student</button>
+				<div class="pull-right" bis_skin_checked="1">
+					<button data-placement="top" title="" id="signin_teacher" onclick="window.location=&#39;signup_teacher.php&#39;" name="login" class="btn btn-info" type="submit" data-original-title="Sign In as Teacher" fdprocessedid="e9idp7">I`m a Teacher</button>
+				</div>
+			</div>
+														<script type="text/javascript">
+														$(document).ready(function(){
+															$('#signin_student').tooltip('show'); $('#signin_student').tooltip('hide');
+														});
+														</script>	
+														<script type="text/javascript">
+														$(document).ready(function(){
+															$('#signin_teacher').tooltip('show'); $('#signin_teacher').tooltip('hide');
+														});
+														</script>	</div></div>
+		</div>
+		<div class="row-fluid" bis_skin_checked="1">
+			<div class="span12" bis_skin_checked="1"><div class="index-footer" bis_skin_checked="1">
+
+<div class="navbar" bis_skin_checked="1">
+           <div class="navbar-inner" bis_skin_checked="1">
+               <div class="container-fluid" bis_skin_checked="1">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+             
+							<div class="nav-collapse collapse" bis_skin_checked="1">
+							<ul class="nav" id="footer_nav">
+			<li class="divider-vertical"></li>
+		<li class="active"><a href="http://localhost/lms/index.php" bis_skin_checked="1"><i class="icon-home"></i>&nbsp;Home</a></li>
+			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/about.php" bis_skin_checked="1"><i class="icon-info-sign"></i>&nbsp;About</a></li>
+			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/calendar_of_events.php" bis_skin_checked="1"><i class="icon-calendar"></i>&nbsp;Calendar of Events</a></li>
+			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/#directories" data-toggle="modal" bis_skin_checked="1"><i class="icon-phone"></i>&nbsp;Directories</a></li>
+						<!-- Modal -->
+<div id="directories" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" bis_skin_checked="1">
+<div class="modal-body" bis_skin_checked="1">
+										<div class="jsn-article-content" style="text-align: left;" bis_skin_checked="1">
+<pre><span style="font-size:medium"><em><strong>DIRECTORIES</strong></em></span></pre>
+
+<ul>
+	<li>Lab School - 712-0848</li>
+	<li>Accounting - 495-5560</li>
+	<li>Presidents Office - 495-4064(telefax)</li>
+	<li>VPA/PME - 495-1635</li>
+	<li>Registrar Office - 495-4657(telefax)</li>
+	<li>Cashier - 712-7272</li>
+	<li>CIT - 712-0670</li>
+	<li>SAS/COE - 495-6017</li>
+	<li>BAC - 712-8404(telefax)</li>
+	<li>Records - 495-3470</li>
+	<li>Supply - 495-3767</li>
+	<li>Internet Lab - 712-6144/712-6459</li>
+	<li>COA - 495-5748</li>
+	<li>Guard House - 476-1600</li>
+	<li>HRM - 495-4996</li>
+	<li>Extension - 457-2819</li>
+	<li>Canteen - 495-5396</li>
+	<li>Research - 712-8464</li>
+	<li>Library - 495-5143</li>
+	<li>OSA - 495-1152</li>
+</ul>
+</div>
+</div>
+<div class="modal-footer" bis_skin_checked="1">
+<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i> Close</button>
+
+</div>
+</div>			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/#campuses" data-toggle="modal" bis_skin_checked="1"><i class="icon-building"></i>&nbsp;Campuses</a></li>
+						<!-- Modal -->
+<div id="campuses" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" bis_skin_checked="1">
+<div class="modal-body" bis_skin_checked="1">
+										<pre><span style="font-size:16px"><strong>Campuses</strong></span></pre>
+
+<ul>
+	<li>Koparkhairane, Navi Mumbai</li>
+	&nbsp;
+</ul>
+</div>
+<div class="modal-footer" bis_skin_checked="1">
+<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i> Close</button>
+
+</div>
+</div>			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/history.php" bis_skin_checked="1"><i class="icon-file"></i>&nbsp;History</a></li>
+			<li class="divider-vertical"></li>
+		<li><a href="http://localhost/lms/developers.php" bis_skin_checked="1"><i class="icon-user"></i>&nbsp;Developers</a></li>
+		<li class="divider-vertical"></li>
+	
+	</ul>
+							</div>
+                   <!--/.nav-collapse -->
+               </div>
+           </div>
+</div>
+
+	</div></div>
+		</div>
+			<center>
+		<footer>
+		
+		<p>Team -T7</p>
+			<!-- <p>Programmed by: John Kevin Lorayna BSIS 4-A</p> -->
+		</footer>
+</center>
+
+    </div>
+        <script src="./index_files/bootstrap.min.js.download"></script>
+        <script src="./index_files/jquery.easy-pie-chart.js.download"></script>
+        <script src="./index_files/scripts.js.download"></script>
+				<script>
+				$(function() {
+					// Easy pie charts
+					$('.chart').easyPieChart({animate: 1000});
+				});
+				</script>
+			<!-- data table -->
+		<script src="./index_files/jquery.dataTables.min.js.download"></script>
+        <script src="./index_files/DT_bootstrap.js.download"></script>		
+			<!-- jgrowl -->
+		<script src="./index_files/jquery.jgrowl.js.download"></script>   
+				<script>
+				$(function() {
+					$('.tooltip').tooltip();	
+					$('.tooltip-left').tooltip({ placement: 'left' });	
+					$('.tooltip-right').tooltip({ placement: 'right' });	
+					$('.tooltip-top').tooltip({ placement: 'top' });	
+					$('.tooltip-bottom').tooltip({ placement: 'bottom' });
+					$('.popover-left').popover({placement: 'left', trigger: 'hover'});
+					$('.popover-right').popover({placement: 'right', trigger: 'hover'});
+					$('.popover-top').popover({placement: 'top', trigger: 'hover'});
+					$('.popover-bottom').popover({placement: 'bottom', trigger: 'hover'});
+					$('.notification').click(function() {
+						var $id = $(this).attr('id');
+						switch($id) {
+							case 'notification-sticky':
+								$.jGrowl("Stick this!", { sticky: true });
+							break;
+							case 'notification-header':
+								$.jGrowl("A message with a header", { header: 'Important' });
+							break;
+							default:
+								$.jGrowl("Hello world!");
+							break;
+						}
+					});
+				});
+				</script>
+			<link href="./index_files/datepicker.css" rel="stylesheet" media="screen">
+			<link href="./index_files/uniform.default.css" rel="stylesheet" media="screen">
+			<link href="./index_files/chosen.min.css" rel="stylesheet" media="screen">
+		<!--  -->
+		<script src="./index_files/jquery.uniform.min.js.download"></script>
+        <script src="./index_files/chosen.jquery.min.js.download"></script>
+        <script src="./index_files/bootstrap-datepicker.js.download"></script>
+		<!--  -->
+			<script src="./index_files/wysihtml5-0.3.0.js.download"></script>
+			<script src="./index_files/bootstrap-wysihtml5.js.download"></script>
+			<script src="./index_files/ckeditor.js.download"></script>
+			<script src="./index_files/jquery.js.download"></script>
+			<script type="text/javascript" src="./index_files/tinymce.min.js.download"></script>
+        <script>
+        $(function() {
+            // Ckeditor standard
+            $( 'textarea#ckeditor_standard' ).ckeditor({width:'98%', height: '150px', toolbar: [
+				{ name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+				[ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
+				{ name: 'basicstyles', items: [ 'Bold', 'Italic' ] }
+			]});
+            $( 'textarea#ckeditor_full' ).ckeditor({width:'98%', height: '150px'});
+        });
+        </script>
+		<!-- <script type="text/javascript" src="admin/assets/modernizr.custom.86080.js"></script> -->
+		<script src="./index_files/jquery.hoverdir.js.download"></script>
+		<link rel="stylesheet" type="text/css" href="./index_files/style.css">
+			<script type="text/javascript">
+			$(function() {
+				$('#da-thumbs > li').hoverdir();
+			});
+			</script>
+			<script src="./index_files/fullcalendar.js.download"></script>
+			<script src="./index_files/gcal.js.download"></script>
+			<link href="./index_files/datepicker.css" rel="stylesheet" media="screen">
+			<script src="./index_files/bootstrap-datepicker.js.download"></script>
+						<script>
+						$(function() {
+							$(".datepicker").datepicker();
+							$(".uniform_on").uniform();
+							$(".chzn-select").chosen();
+							$('#rootwizard .finish').click(function() {
+								alert('Finished!, Starting over!');
+								$('#rootwizard').find("a[href*='tab1']").trigger('click');
+							});
+						});
+						</script>
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
